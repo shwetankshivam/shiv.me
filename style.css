@@ -16,7 +16,11 @@
     --clr-text:#000000;
     --clr-background:#ffffff;
     --clr-border:#393E46;
-  
+    --body-font-size:12pt;
+    --title-font-size:14pt;
+    --name-font-size:14pt;
+    --footer-font-size:12pt;
+    --copyright-font-size:9pt;
 }
 
 body {
@@ -33,17 +37,18 @@ body {
     align-items: center; */
     
     
+    
   }
 main{
     margin: 6%;
-    padding: 4% 4%;
+    padding: 4%;
     padding-bottom: 0%;
     margin-bottom: 6%;
     background-color: var(--clr-main);
     border-style: solid;
     border-radius: 1rem;
     border-width: 1pt;
-    font-size: 12pt;
+    font-size: var(--body-font-size);
     
 }
 #main{
@@ -56,7 +61,7 @@ main{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     /* border-style: solid; */
-    font-size: 12pt;
+    font-size: var(--body-font-size);
     
     
 }
@@ -64,13 +69,13 @@ main{
     font-family: 'Regular';
 }
 #name-line{
-    font-size: 14pt;
+    font-size: var(--name-font-size);
     margin-bottom: 0.2rem;;
 }
 #pronouns{
     font-family: 'Extralight';
     font-weight: 100;
-    font-size: 12pt;
+    font-size: var(--body-font-size);
 }
 #about{
     flex-direction: column;
@@ -92,8 +97,8 @@ main{
     /* border-style: dashed; */
 }
 #skills{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
     border-color: var(--clr-border);
@@ -121,8 +126,29 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border-style:dashed; */
+    margin: auto;
+    
 }
+#list{
+    /* border-style: solid; */
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:space-around;
+    margin-top: 0.5em;
+}
+#list-items{
+    /* border-style: dashed; */
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    /* border-style: dotted; */
+    padding: .5em;
+    margin-top: 0%;
 
+}
 
 footer{
     display: flex;
@@ -148,7 +174,7 @@ h2{
     margin: 0%;
     font-family: 'light';
     font-weight: 150;
-    font-size: 14pt;
+    font-size: var(--title-font-size);
 }
 
 #buttons{
@@ -167,7 +193,7 @@ h2{
 
 #copyright{
     font-family: 'extralight';
-    font-size: 9pt;
+    font-size: var(--copyright-font-size);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,4 +201,13 @@ h2{
     padding-bottom: 0%;
     margin-bottom: 0%;
     font-weight: 200;
+}
+
+a{
+    color: var(--body-font-size);
+    text-decoration: none;
+}
+a.hover{
+    background-color: var(--clr-border);
+    text-decoration: none;
 }
