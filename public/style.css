@@ -18,7 +18,7 @@
     --clr-border:#393E46;
     --body-font-size:12pt;
     --title-font-size:14pt;
-    --name-font-size:14pt;
+    --name-font-size:18pt;
     --footer-font-size:12pt;
     --copyright-font-size:9pt;
 }
@@ -43,7 +43,7 @@ body {
 main{
     margin: 6%;
     padding: 4%;
-    padding-top: 10%;
+    padding-top: 8%;
     padding-bottom: 0%;
     margin-bottom: 6%;
     background-color: var(--clr-main);
@@ -155,6 +155,14 @@ main{
     margin-bottom: 0%;
 
 }
+li{
+    list-style: circle;
+   
+    /* border-style: solid; */
+}
+
+
+
 
 footer{
     display: flex;
