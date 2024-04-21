@@ -43,6 +43,7 @@ body {
 main{
     margin: 6%;
     padding: 4%;
+    padding-top: 10%;
     padding-bottom: 0%;
     margin-bottom: 6%;
     background-color: var(--clr-main);
