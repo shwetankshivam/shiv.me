@@ -70,6 +70,8 @@ main{
 #name{
     font-family: 'Regular';
 }
+
+
 #name-line{
     font-size: var(--name-font-size);
     margin-bottom: 0.2rem;;
@@ -224,4 +226,101 @@ a{
 a.hover{
     background-color: var(--clr-border);
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 425px) {
+    /* mobile-devices small */
+    #list{
+        display: block;
+        
+        /* background-color: yellow; */
+    }
+    #list-items{
+        padding: 0%; 
+        padding-left: 2%;
+        margin: 0%;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:480px) {
+    /* mobile devices*/
+    #list{
+        display: block;
+        
+        /* background-color: red; */
+    }
+    #list-items{
+        padding: 0%; 
+        padding-left: 2%;
+        margin: 0%;
+    }
+}
+
+@media screen and (min-width:787px) {
+    /* ipad/tablet devices*/
+    #list-items{
+        
+        /* background-color: green; */
+    }
+    main{
+        margin: 6%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 4%;
+        padding-top: 8%;
+        padding-bottom: 0%;
+        margin-bottom: 6%;
+        background-color: var(--clr-main);
+        border-style: solid;
+        border-radius: 1rem;
+        border-width: 1pt;
+        font-size: var(--body-font-size);
+        
+    }
+    
+}
+
+ @media screen and (min-width:1080px) {
+    /* pc/laptop devices*/
+    #list-items{
+        
+        /* background-color: blue; */
+    }
+    main{
+        margin: 6%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 4%;
+        padding-top: 8%;
+        padding-bottom: 0%;
+        margin-bottom: 6%;
+        background-color: var(--clr-main);
+        border-style: solid;
+        border-radius: 1rem;
+        border-width: 1pt;
+        font-size: 14pt;
+        
+    }
+    #name-line{
+        font-size: 20pt;
+        margin-bottom: 0.2rem;;
+    }
+    #pronouns{
+        font-family: 'Extralight';
+        font-weight: 100;
+        font-size: 14pt;
+    }
+    #about{
+        flex-direction: column;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        /* padding-left: 8%; remove padding in media querry */
+        /* margin-top: 0.3rem; */
+        font-size: 14pt;
+        /* border-style: solid; */
+    }
 }
