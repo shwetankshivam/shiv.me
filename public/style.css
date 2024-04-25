@@ -86,7 +86,7 @@ main{
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    padding-left: 8%; /* remove padding in media querry */
+    /* padding-left: 8%; remove padding in media querry */
     /* margin-top: 0.3rem; */
     font-size: 11pt;
     /* border-style: solid; */
