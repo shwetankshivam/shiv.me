@@ -21,6 +21,11 @@
     --name-font-size:18pt;
     --footer-font-size:12pt;
     --copyright-font-size:9pt;
+    --desktop-font-size: 14pt;
+}
+*{
+    top: 0;
+    left: 0;
 }
 
 body {
@@ -52,6 +57,7 @@ main{
     border-width: 1pt;
     font-size: var(--body-font-size);
     
+    
 }
 #main{
     flex-direction: column;
@@ -59,14 +65,92 @@ main{
     justify-content: center;
     align-items: center;
     padding: 2rem, 1rem;
+    padding-top: 2%;
     /* padding-top: 1rem; */
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     margin-bottom: 1rem;
     /* border-style: solid; */
     font-size: var(--body-font-size);
     
+}
+
+
+/* Time  */
+
+#date-time{
+    /* border-style: dotted; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+    font-size:var(--title-font-size);
+    font-family: 'Extralight';
+    font-weight: 100;
+    margin-bottom:0% ;
+    padding-left:2rem;
+    padding-right:2rem;
     
 }
+
+
+/* intro-animation */
+
+.splash{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--clr-background);
+    transition:2.5s;
+    
+    /* border-style: double; */
+}
+.logo-header{
+    position: absolute;
+    /* border-style: solid; */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-text);
+    font-size:30pt;
+    font-family: 'Extralight';
+    font-weight: 100;
+    color: var(--clr-text);
+}
+
+ /* if added name in the splash screen  */
+/* #name-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+} */
+.logo{
+    position: relative;
+    bottom: -20px;
+    /* left: -50%; */
+    opacity: 0;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    font-size: 88pt;
+    transition: ease-in-out 500ms;
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0; 
+    transition: ease-in-out 1ms;
+}
+
+
+
 #name{
     font-family: 'Regular';
 }
@@ -75,6 +159,10 @@ main{
 #name-line{
     font-size: var(--name-font-size);
     margin-bottom: 0.2rem;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #pronouns{
     font-family: 'Extralight';
@@ -241,6 +329,15 @@ a.hover{
         padding-left: 2%;
         margin: 0%;
     }
+
+    .logo-header{
+        top: 45%;
+        left: 50%;
+        font-size: 30pt;
+    }
+    .logo.active{
+        font-size: 45pt;
+    }
 }
 
 @media screen and (min-width:426px) and (max-width:480px) {
@@ -255,20 +352,25 @@ a.hover{
         padding-left: 2%;
         margin: 0%;
     }
+    .logo-header{
+        top: 45%;
+        left: 50%;
+        font-size: 30pt;
+    }
+    .logo.active{
+        font-size: 55pt;
+    }
 }
 
 @media screen and (min-width:787px) {
     /* ipad/tablet devices*/
-    #list-items{
-        
-        /* background-color: green; */
-    }
+
     main{
         margin: 6%;
         margin-left: 15%;
         margin-right: 15%;
         padding: 4%;
-        padding-top: 8%;
+        padding-top: 6%;
         padding-bottom: 0%;
         margin-bottom: 6%;
         background-color: var(--clr-main);
@@ -276,31 +378,28 @@ a.hover{
         border-radius: 1rem;
         border-width: 1pt;
         font-size: var(--body-font-size);
+        /* background-color: red; */
         
     }
     
 }
 
  @media screen and (min-width:1080px) {
-    /* pc/laptop devices*/
-    #list-items{
-        
-        /* background-color: blue; */
-    }
+    
     main{
         margin: 6%;
         margin-left: 20%;
         margin-right: 20%;
         padding: 4%;
-        padding-top: 8%;
+        padding-top: 4%;
         padding-bottom: 0%;
         margin-bottom: 6%;
         background-color: var(--clr-main);
         border-style: solid;
         border-radius: 1rem;
         border-width: 1pt;
-        font-size: 14pt;
-        
+        font-size: var(--desktop-font-size);
+     
     }
     #name-line{
         font-size: 20pt;
@@ -309,7 +408,7 @@ a.hover{
     #pronouns{
         font-family: 'Extralight';
         font-weight: 100;
-        font-size: 14pt;
+        font-size: var(--desktop-font-size);
     }
     #about{
         flex-direction: column;
@@ -320,7 +419,7 @@ a.hover{
         margin-right: 10%;
         /* padding-left: 8%; remove padding in media querry */
         /* margin-top: 0.3rem; */
-        font-size: 14pt;
+        font-size: var(--desktop-font-size);
         /* border-style: solid; */
     }
 }
