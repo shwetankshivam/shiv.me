@@ -18,18 +18,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             logoSpan.forEach((span, idx) => {
+
                 span.classList.remove('active');
                 span.classList.add('fade');
-            }, (idx + 1) * 10)
-        }, 200)
+            }, (idx + 1) * 50)
+        }, 20);
 
+
+        setTimeout(() => {
+            intro.style.top = '-100vh';
+            intro.style.opacity = '0';
+        }, 1000)
 
     })
 
-    setTimeout(() => {
-        intro.style.top = '-12%';
-        intro.style.opacity = '0';
-    }, 1000)
+
 
 });
 
