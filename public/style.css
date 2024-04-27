@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Extralight';
-    src: url(/fonts/SourceSans3-ExtraLight.ttf) format("TrueType");
+    src: url(/public/fonts/SourceSans3-ExtraLight.ttf) format("TrueType");
 }
 @font-face {
     font-family: 'light';
-    src: url(/fonts/SourceSans3-Light.ttf) format("TrueType");
+    src: url(/public/fonts/SourceSans3-Light.ttf) format("TrueType");
 }
 @font-face {
     font-family: 'Regular';
-    src: url(/fonts/SourceSans3-Regular.ttf) format("TrueType");
+    src: url(/public/fonts/SourceSans3-Regular.ttf) format("TrueType");
 }
 
 :root{

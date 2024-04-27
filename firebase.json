@@ -1,6 +1,30 @@
 {
   "hosting": {
     "public": "public",
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/",
+        "destination": "/javaScripts/*"
+      },
+      {
+        "source": "/",
+        "destination": "/styles/*"
+      },
+      {
+        "source": "/",
+        "destination": "/fonts/*"
+      },
+      {
+        "source": "/",
+        "destination": "/docs/*"
+      }
+    ],
+
+
     "ignore": [
       "firebase.json",
       "**/.*",
