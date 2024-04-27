@@ -323,10 +323,7 @@ a.hover{
     .logo-header{
         top: 45%;
         left: 50%;
-        font-size: 30pt;
-    }
-    .logo.active{
-        font-size: 45pt;
+       
     }
 }
 
@@ -345,10 +342,6 @@ a.hover{
     .logo-header{
         top: 45%;
         left: 50%;
-        font-size: 30pt;
-    }
-    .logo.active{
-        font-size: 55pt;
     }
 }
 
