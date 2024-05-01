@@ -29,7 +29,7 @@
 }
 
 body {
-    font-family: 'light';
+    font-family: 'light', sans-serif;
     margin: 0%;
     padding: 0%;
    
@@ -84,7 +84,7 @@ main{
     justify-content:space-between;
     align-items: center;
     font-size:var(--title-font-size);
-    font-family: 'Extralight';
+    font-family: 'Extralight', sans-serif;
     font-weight: 100;
     margin-bottom:0% ;
     padding-left:2rem;
@@ -114,7 +114,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size:30pt;
-    font-family: 'Extralight';
+    font-family: 'Extralight', sans-serif;
     font-weight: 100;
     color: var(--clr-text);
 }
@@ -144,7 +144,7 @@ main{
 
 
 #name{
-    font-family: 'Regular';
+    font-family: 'Regular', sans-serif;
 }
 
 
@@ -157,7 +157,7 @@ main{
     justify-content: center;
 }
 #pronouns{
-    font-family: 'Extralight';
+    font-family: 'Extralight', sans-serif;
     font-weight: 100;
     font-size: var(--body-font-size);
 }
@@ -266,7 +266,7 @@ footer{
 
 h2{
     margin: 0%;
-    font-family: 'light';
+    font-family: 'light', sans-serif;
     font-weight: 150;
     font-size: var(--title-font-size);
 }
@@ -286,7 +286,7 @@ h2{
 }
 
 #copyright{
-    font-family: 'extralight';
+    font-family: 'extralight', sans-serif;
     font-size: var(--copyright-font-size);
     display: flex;
     align-items: center;
@@ -325,6 +325,9 @@ a.hover{
         left: 50%;
        
     }
+    #logo.active{
+        font-size: 35pt;
+    }
 }
 
 @media screen and (min-width:426px) and (max-width:480px) {
@@ -342,6 +345,10 @@ a.hover{
     .logo-header{
         top: 45%;
         left: 50%;
+        
+    }
+    #logo.active{
+        font-size: 45pt;
     }
 }
 
@@ -389,7 +396,6 @@ a.hover{
         margin-bottom: 0.2rem;;
     }
     #pronouns{
-        font-family: 'Extralight';
         font-weight: 100;
         font-size: var(--desktop-font-size);
     }

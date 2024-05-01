@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('DOMContentLoaded', () => {
 
 
-        const greetings = [ "Hello", "नमस्ते", "Bonjour", "Hola", "Ciao", "Hallo", "Привет", "مرحبا" ];
+        const greetings = ["Hello", "नमस्ते", "Bonjour", "Hola", "Ciao", "Hallo", "Привет", "Salam", "Салам", "Aloha", "مرحبا", "Nǐ hǎo"];
 
         // Select a random greeting from the array
         const randomIndex = Math.floor(Math.random() * greetings.length);
