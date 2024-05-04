@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Extralight';
-    src: url(/fonts/SourceSans3-ExtraLight.ttf) format("TrueType");
+    src: url(fonts/SourceSans3-ExtraLight.ttf) format("TrueType");
 }
 @font-face {
     font-family: 'light';
-    src: url(/fonts/SourceSans3-Light.ttf) format("TrueType");
+    src: url(fonts/SourceSans3-Light.ttf) format("TrueType");
 }
 @font-face {
     font-family: 'Regular';
-    src: url(/fonts/SourceSans3-Regular.ttf) format("TrueType");
+    src: url(fonts/SourceSans3-Regular.ttf) format("TrueType");
 }
 
 :root{
@@ -32,7 +32,7 @@ body {
     font-family: 'light', sans-serif;
     margin: 0%;
     padding: 0%;
-   
+    cursor: default;
     /* line-height: 1.6;
     word-spacing: 1.4px; */
     color: var(--clr-text);
@@ -57,8 +57,10 @@ main{
     border-width: 1pt;
     font-size: var(--body-font-size);
     
-    
+
 }
+
+
 #main{
     flex-direction: column;
     display: flex;
@@ -91,7 +93,6 @@ main{
     padding-right:2rem;
     
 }
-
 
 /* intro-animation */
 
@@ -252,8 +253,7 @@ footer{
     align-items:center;
     justify-content: space-around;
     /* border-style: solid ; */
-    padding-top: 2em;
-    
+    padding-top: 1em;
 
   }
 
@@ -261,8 +261,19 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border-style: solid; */  
+    bottom: 0;
+    /* margin-bottom: .1rem; */
+    /* padding-top: 10%; */
+    position: sticky; 
+    /* border-style: solid;   */
+    background-image: linear-gradient(#f7f7f7a4, var(--clr-main), var(--clr-main));
+    -webkit-backdrop-filter: blur(.1px);
+    backdrop-filter: blur(.1px);
+    padding: 1%;
+
 }
+
+
 
 h2{
     margin: 0%;
@@ -280,10 +291,18 @@ h2{
     border-width: 1pt;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-bottom: 1rem;
-    border-color: var(--clr-border);
-
+    margin-bottom: .5rem;
+    border-color: var(--clr-border); 
+    cursor: pointer;
+    background-color: var(--clr-main);    
 }
+
+
+.socials{
+    /* background-color: cyan; */
+    color: black;
+}
+
 
 #copyright{
     font-family: 'extralight', sans-serif;
