@@ -272,8 +272,23 @@ footer{
     padding: 1%;
 
 }
+.resume1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    /* margin-bottom: .1rem; */
+    /* padding-top: 10%; */
+    /* position: sticky;  */
+    /* padding: 1%; */
+
+}
+
+/* cat animation  */
 
 
+
+/* cat animation ends  */
 
 h2{
     margin: 0%;
@@ -282,7 +297,7 @@ h2{
     font-size: var(--title-font-size);
 }
 
-#buttons{
+.buttons{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -295,6 +310,10 @@ h2{
     border-color: var(--clr-border); 
     cursor: pointer;
     background-color: var(--clr-main);    
+    /* box-shadow: -2px -3px 7px hsla(0, 0%, 35%, 0.533) ; */
+}
+#buttons1{
+    box-shadow: none ;
 }
 
 
