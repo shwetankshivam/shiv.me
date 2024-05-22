@@ -212,9 +212,9 @@ main{
 }
 #t-details{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border-style:dashed; */
+    /* align-items: center;
+    justify-content: center; 
+    border-style:dashed; */
     margin: auto;
     
 }
@@ -222,8 +222,8 @@ main{
     /* border-style: solid; */
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
-    justify-content:space-around;
+    align-items:center;
+    justify-content:space-between;
     margin-top: 0.5em;
     margin-bottom: 0%;
 }
